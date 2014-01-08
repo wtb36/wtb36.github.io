@@ -2,6 +2,7 @@
 layout: post
 title: LaTeX to Markdown
 ---
+# LaTeX to Markdown
 Ich habe vor einiger Zeit eine wissenschaftliche Arbeit mit LaTeX geschrieben.
 Nun wollte ich sie bei leanpub veröffentlichen. Ich dachte, das könne doch
 nicht so schwer sein. Schwer war es nicht, aber doch eine ziemliche Viecherei.
