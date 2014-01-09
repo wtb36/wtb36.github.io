@@ -4,7 +4,7 @@ title: LaTeX to Markdown
 ---
 # LaTeX to Markdown
 Ich habe vor einiger Zeit eine wissenschaftliche Arbeit mit LaTeX geschrieben.
-Nun wollte ich sie bei leanpub veröffentlichen. Ich dachte, das könne doch
+Nun wollte ich sie bei [leanpub] [1] veröffentlichen. Ich dachte, das könne doch
 nicht so schwer sein. Schwer war es nicht, aber doch eine ziemliche Viecherei.
 Vieles ließ sich aber durch Ersetzungen mit vim erledigen.
 
@@ -28,8 +28,16 @@ gehen, die müssen zu einzelnen Gleichungen umgestellt werden.
 Hervorhebungen mit `\emph` werden in * eingeschlossen:
 
     :%s/\\emph{\(.\{-\}\)}/*\1*/g
+Codeblöcke können durch Einrücken mit 4 Leerzeichen oder durch 8 Tilden
+(~) eingeleitet und abgeschlossen werden. (Hier bei github geschieht das
+durch drei Backticks).
+
+    :%s/\\\(begin\|end\){verbatim}/\~\~\~\~\~\~\~\~/
+
 Mit den Literaturverweisen bin ich noch nicht zufrieden. Ich habe Fuß- bzw.
 Endnoten probiert, aber erstens sind die Zahlen zu klein und zweitens - was
 viel schlimmer ist - man kann nur einmal referenzieren. Wenn man ein zweites
 mal auf die gleiche Endnote referenziert, wird kein Link auf die Endnote
 erzeugt.
+
+[1]: http://leanpub.com/ "leanpub"
