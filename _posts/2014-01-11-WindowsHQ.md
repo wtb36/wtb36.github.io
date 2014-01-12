@@ -1,6 +1,6 @@
 ---
 layout: post
-title: call from Windows HQ
+title: Call from Windows HQ
 ---
 # A call from Windows HQ
 Recently, I got a phone call, allegedly from the Windows Headquarter in
@@ -41,3 +41,8 @@ When I told him, he should be able to see whether the infected computer
 is up an online, the connection was closed.
 
 The call took about 9 minutes.
+
+I found a [blog] [1] where Fabian Wenk reports a long history of
+such calls in Swizerland and Germany (written in german).
+
+[1]: http://www.wenks.ch/fabian/Windows_Operating_System_Support.html "calls in CH and D"
