@@ -15,12 +15,14 @@ durch $ abgegrenzte Inline-Formeln durch die entsprechende Markdown-Version in
 `{$$}...{/$$}`.
 
     :%g/\$/ . s/\([^$]\|^\)\$\([^$]\{-1,}\)\$\([^$]\|$\)/\1{$$}\2{\/$$}\3/g
+
 Abgesetzte Formeln stehen in einer `equation`- bzw. `eqnarray`-Umgebung. Das etwas
 längliche `\begin{equation}` und Konsorten hatte ich damals durch `\beq` usw.
 ersetzt. Die werden jetzt mit
 
     :%s/\\\(be[aq]\|[\[(]\)/{$$}/
     :%s/\\\(ee[aq]\|[\])]\)/{\/$$}/
+
 durch die Markdown-Entsprechung ersetzt. Vor dem `begin`-Tag muss allerdings ggf.
 noch eine Leerzeile eingefügt werden. Ganz blöd ist, dass `eqnarrays` gar nicht
 gehen, die müssen zu einzelnen Gleichungen umgestellt werden.
@@ -28,6 +30,7 @@ gehen, die müssen zu einzelnen Gleichungen umgestellt werden.
 Hervorhebungen mit `\emph` werden in * eingeschlossen:
 
     :%s/\\emph{\(.\{-\}\)}/*\1*/g
+
 Codeblöcke können durch Einrücken mit 4 Leerzeichen oder durch 8 Tilden
 (~) eingeleitet und abgeschlossen werden. (Hier bei github geschieht das
 durch drei Backticks).
